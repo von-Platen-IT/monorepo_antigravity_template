@@ -13,7 +13,7 @@ ich kopiere sie einfach
 ├── packages/
 │   └── shared/              # Geteilte Types & Konstanten
 ├── apps/
-│   ├── backend/             # Rust Backend
+│   ├── backend/             # .net API Backend
 │   ├── web/                 # Vue.js Frontend
 │   └── db/                  # Datenbank Skripte
 ├── package.json
