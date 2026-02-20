@@ -1,0 +1,43 @@
+# .geminiignore sparen beim Context-Window der KI
+
+# 1. Versionskontrolle & IDEs
+.git/
+.vs/
+.idea/
+.vscode/
+
+# 2. .NET 9 / C# Spezifisch (WICHTIG!)
+**/bin/
+**/obj/
+**/TestResults/
+*.user
+*.suo
+
+# 3. Node.js & Vue 3 / Vite Spezifisch (WICHTIG!)
+**/node_modules/
+**/dist/
+**/build/
+**/.nuxt/
+**/.output/
+
+# 4. Lockfiles (Fressen extrem viele Tokens!)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+packages.lock.json
+
+# 5. Security (Soll die KI niemals lesen)
+.env
+.env.*
+*.pfx
+*.pem
+secrets.json
+
+# 6. Große Media-Assets (Die KI kann eh keinen Code darin finden)
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.gif
+**/*.svg
+**/*.mp4
+**/*.pdf
